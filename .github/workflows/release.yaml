@@ -17,8 +17,9 @@ jobs:
         uses: devcontainers/action@v1
         with:
           publish-features: "true"
-          base-path-to-features: "./src"
+          base-path-to-features: "./features/src"
           generate-docs: "true"
+          features-namespace: "duncsmith/devcontainer/features"
           
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
